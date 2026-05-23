@@ -1,0 +1,61 @@
+/* ============================================================
+   tokens.css — design system variables
+   portfolio · helena flausino · helenaflaus.github.io
+   ============================================================ */
+
+:root {
+  /* --- color palette --- */
+  --color-cobalt:     #2850E8;
+  --color-cobalt-dim: rgba(40, 80, 232, 0.08);
+  --color-cobalt-mid: rgba(40, 80, 232, 0.18);
+  --color-cream:      #F4F1E8;
+  --color-black:      #0E1117;
+  --color-white:      #FFFFFF;
+
+  /* --- semantic aliases --- */
+  --c-bg:       var(--color-cream);
+  --c-surface:  var(--color-white);
+  --c-accent:   var(--color-cobalt);
+  --c-text:     var(--color-black);
+  --c-muted:    rgba(14, 17, 23, 0.40);
+  --c-border:   rgba(14, 17, 23, 0.10);
+  --c-tint:     var(--color-cobalt-dim);
+
+  /* --- typography --- */
+  --font-display: 'Plus Jakarta Sans Variable', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-bold:    700;
+  --fw-black:   800;
+
+  /* --- spacing scale --- */
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  /* --- layout --- */
+  --max-w:       1080px;
+  --gutter:      32px;
+  --section-pad: 56px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+
+  /* --- grain data-uri (feTurbulence noise) --- */
+  --grain-hero:    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.11'/%3E%3C/svg%3E");
+  --grain-section: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.78' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)' opacity='0.065'/%3E%3C/svg%3E");
+
+  /* --- transitions --- */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --dur-fast:   150ms;
+  --dur-normal: 250ms;
+  --dur-slow:   400ms;
+}

@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "helena flausino — analytics engineer",
+    "description": "analytics engineer no itaú unibanco. dados, arquitetura, ia e os sistemas que transformam volume em clareza."
+  },
+  "nav": {
+    "work":      "work",
+    "expertise": "expertise",
+    "ia":        "ia",
+    "sobre":     "sobre"
+  },
+  "hero": {
+    "eyebrow":  "analytics engineer · itaú unibanco · são paulo, br",
+    "name":     "helena<br>flausino",
+    "desc":     "construo sistemas de dados e os processos de raciocínio que os tornam úteis. arquitetura, análise e ia no dia a dia.",
+    "cta_cv":   "↓ currículo",
+    "cta_li":   "linkedin →",
+    "cta_gh":   "github →"
+  },
+  "stats": [
+    { "number": "7",    "label": "domínios técnicos" },
+    { "number": "27",   "label": "dias de estudo" },
+    { "number": "≥70%", "label": "meta na badge" },
+    { "number": "2+",   "label": "anos itaú" }
+  ],
+  "expertise": {
+    "label": "01 — expertise",
+    "title": "domínios de conhecimento",
+    "items": [
+      {
+        "num":  "01 · 26,5%",
+        "name": "amazon web services",
+        "pct":  "glue · redshift · athena · quicksight",
+        "tags": ["s3", "lambda", "finops"]
+      },
+      {
+        "num":  "02 · 25%",
+        "name": "big data",
+        "pct":  "spark · hadoop · etl/elt",
+        "tags": ["formatos", "streaming", "qualidade"]
+      },
+      {
+        "num":  "03 · 16%",
+        "name": "banco de dados",
+        "pct":  "sql avançado · modelagem · dw",
+        "tags": ["window fn", "joins", "olap"]
+      },
+      {
+        "num":  "04 · 15%",
+        "name": "dataviz",
+        "pct":  "gestalt · storytelling · dashboards",
+        "tags": ["quicksight", "tableau", "d3"]
+      },
+      {
+        "num":  "05 · 8,5%",
+        "name": "devops",
+        "pct":  "git · ci/cd · observabilidade",
+        "tags": ["github actions", "monitoring"]
+      },
+      {
+        "num":  "06 · 4,5%",
+        "name": "programação",
+        "pct":  "python · algoritmos · distribuída",
+        "tags": ["pandas", "pyspark"]
+      },
+      {
+        "num":  "07 · 4,5%",
+        "name": "data mesh",
+        "pct":  "4 princípios · federated governance",
+        "tags": ["domínios", "self-serve"]
+      }
+    ]
+  },
+  "ia": {
+    "label": "02 — ia no dia a dia",
+    "title": "como amplico minha capacidade com ia",
+    "items": [
+      {
+        "badge": "agentes",
+        "title": "planejamento e estudo",
+        "desc":  "estruturei 27 dias de preparação para a badge em parceria com claude — metodologia, templates e tracking. o agente organizou, eu executei e escrevi."
+      },
+      {
+        "badge": "automação",
+        "title": "análise e pipeline",
+        "desc":  "uso llms para iterar em queries sql, revisar código pyspark e documentar decisões de arquitetura — ampliando escopo de análise sem aumentar tempo."
+      },
+      {
+        "badge": "princípio",
+        "title": "raciocínio + ferramenta",
+        "desc":  "ia como amplificador, não substituto. cada projeto documenta explicitamente o que foi gerado e o que foi pensado — transparência como prática."
+      }
+    ]
+  },
+  "projects": {
+    "label": "03 — projetos",
+    "title": "trabalho selecionado",
+    "items": [
+      {
+        "type":  "analytics · estudo · badge",
+        "title": "analytics engineering reference",
+        "desc":  "base de conhecimento técnico construída durante a preparação para a badge professional — 7 domínios, 22 arquivos, glossário com +60 termos.",
+        "tags":  ["aws", "python", "spark", "sql"],
+        "link":  "https://github.com/helenaflaus/analytics-engineering-reference",
+        "label": "ver no github →"
+      },
+      {
+        "type":  "dataviz · análise · em breve",
+        "title": "análise financeira",
+        "desc":  "dashboard de indicadores com storytelling orientado a decisão para área de negócio no itaú. visualizações interativas com quicksight.",
+        "tags":  ["dataviz", "sql", "quicksight"],
+        "link":  "#",
+        "label": "em construção →"
+      }
+    ]
+  },
+  "certs": {
+    "label": "04 — certificações",
+    "title": "formação técnica",
+    "items": [
+      { "name": "badge analytics professional", "inst": "itaú unibanco · 2025", "main": true },
+      { "name": "aws solutions architect",      "inst": "amazon web services" },
+      { "name": "spark & pyspark",              "inst": "databricks / udemy" },
+      { "name": "analytics engineering",        "inst": "dbt labs" }
+    ],
+    "skills_hi": ["python", "spark", "sql"],
+    "skills":    ["redshift", "athena", "dbt", "airflow", "quicksight", "glue", "s3", "git"]
+  },
+  "about": {
+    "label": "05 — sobre",
+    "title": "quem está por trás dos dados",
+    "text":  "engenheira de analytics jr. no <strong>itaú unibanco</strong>, construindo sistemas de dados que transformam volume em clareza.<br><br>acredito que a diferença entre um bom dado e uma boa decisão é o raciocínio no meio — e que <strong>ia</strong> é a ferramenta que estende esse raciocínio, não o substitui.<br><br>este portfolio é evidência disso.",
+    "hobbies": ["fotografia analógica", "design gráfico", "leitura técnica"]
+  },
+  "footer": {
+    "name":    "helena flausino · <b>analytics engineer</b> · são paulo",
+    "links": [
+      { "label": "linkedin", "href": "https://www.linkedin.com/in/helenaflausino" },
+      { "label": "github",   "href": "https://github.com/helenaflaus" },
+      { "label": "email",    "href": "mailto:helena@example.com" }
+    ]
+  }
+}
