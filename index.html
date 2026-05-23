@@ -1,362 +1,279 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="analytics engineer no itaú unibanco. dados, arquitetura e ia.">
-
-  <!-- open graph — LinkedIn share preview -->
-  <meta property="og:title"       content="helena flausino — analytics engineer">
-  <meta property="og:description" content="dados, arquitetura e ia no dia a dia. itaú unibanco.">
+  <meta name="description" content="analytics engineer at itaú unibanco. data, architecture and ai.">
+  <meta property="og:title"       content="Helena Flausino . Analytics Engineer">
+  <meta property="og:description" content="analytics engineer at itaú unibanco. data, architecture and ai.">
   <meta property="og:image"       content="https://helenaflaus.github.io/assets/img/og-image.jpg">
   <meta property="og:url"         content="https://helenaflaus.github.io">
   <meta property="og:type"        content="website">
   <meta name="twitter:card"       content="summary_large_image">
-
-  <title>helena flausino — analytics engineer</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>hf</text></svg>">
-
-  <!-- styles -->
-  <link rel="stylesheet" href="assets/css/tokens.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Helena Flausino . Analytics Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-
 <body>
 
-<!-- ══════════════════════════════════════════════════════════
-     NAVIGATION
-══════════════════════════════════════════════════════════ -->
-
-<header class="nav" role="banner">
-  <a class="nav__logo" href="#" aria-label="Helena Flausino — início">
+<!-- NAV -->
+<nav class="nav" role="banner">
+  <a class="nav__logo" href="#" aria-label="Helena Flausino">
     hf<span class="nav__logo-cursor" aria-hidden="true">_</span>
   </a>
-
-  <nav aria-label="Navegação principal">
-    <ul class="nav__links">
-      <li><a class="nav__link" href="#expertise"  data-nav="expertise"  data-i18n="nav.work">work</a></li>
-      <li><a class="nav__link" href="#expertise"  data-nav="expertise"  data-i18n="nav.expertise">expertise</a></li>
-      <li><a class="nav__link" href="#ia"         data-nav="ia"         data-i18n="nav.ia">ia</a></li>
-      <li><a class="nav__link" href="#sobre"      data-nav="sobre"      data-i18n="nav.sobre">sobre</a></li>
-      <li>
-        <button class="nav__lang" aria-label="Mudar idioma" title="Switch language">
-          en
-        </button>
-      </li>
-    </ul>
-  </nav>
-
-  <button class="nav__menu-btn" aria-label="Abrir menu" aria-expanded="false">
+  <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
-</header>
+  <ul class="nav__links" role="list">
+    <li><a class="nav__link" href="#sobre" data-nav="sobre" data-i18n="nav.sobre">about</a></li>
+    <li><a class="nav__link" href="#work"  data-nav="work"  data-i18n="nav.work">work</a></li>
+    <li><a class="nav__link" href="#ia"    data-nav="ia"    data-i18n="nav.ia">ai</a></li>
+    <li><a class="nav__link" href="#certs" data-nav="certs" data-i18n="nav.certs">education</a></li>
+    <li><button class="nav__lang" aria-label="Switch language">pt</button></li>
+  </ul>
+</nav>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     HERO
-══════════════════════════════════════════════════════════ -->
+<!-- HERO -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <svg class="hero__bars" id="hero-bars" aria-hidden="true" focusable="false"></svg>
+  <div class="hero__inner">
 
-<section class="hero" aria-label="Apresentação" id="hero">
-
-  <!-- bars background — injected by animations.js -->
-  <svg class="hero__bars" id="hero-bars"
-       xmlns="http://www.w3.org/2000/svg"
-       aria-hidden="true"
-       focusable="false">
-  </svg>
-
-  <div class="container">
     <div class="hero__content">
-      <p class="hero__eyebrow" data-i18n="hero.eyebrow">
-        analytics engineer · itaú unibanco · são paulo, br
-      </p>
-
-      <h1 class="hero__name" data-i18n="hero.name">
-        helena<br>flausino
-      </h1>
-
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">analytics engineer · itau unibanco · sao paulo, brazil</p>
+      <h1 class="hero__name"   data-i18n="hero.name">helena<br>flausino</h1>
       <div class="hero__rule" aria-hidden="true"></div>
-
-      <p class="hero__desc" data-i18n="hero.desc">
-        construo sistemas de dados e os processos de raciocínio
-        que os tornam úteis. arquitetura, análise e ia no dia a dia.
-      </p>
-
+      <p class="hero__desc"    data-i18n="hero.desc">i build data systems and the reasoning processes that make them useful. engineering, analysis and ai as daily practice.</p>
       <div class="hero__ctas">
-        <a class="btn btn--primary" href="cv/helena-flausino-pt.pdf"
-           download data-i18n="hero.cta_cv">
-          ↓ currículo
-        </a>
-        <a class="btn btn--outline"
-           href="https://www.linkedin.com/in/helenaflausino"
-           target="_blank" rel="noopener" data-i18n="hero.cta_li">
-          linkedin →
-        </a>
-        <a class="btn btn--ghost"
-           href="https://github.com/helenaflaus"
-           target="_blank" rel="noopener" data-i18n="hero.cta_gh">
-          github →
-        </a>
+        <a class="btn btn--primary" href="./cv/helena-flausino-en.pdf" download data-i18n="hero.cta_cv">↓ résumé</a>
+        <a class="btn btn--outline"  href="https://www.linkedin.com/in/helenaflausino" target="_blank" rel="noopener" data-i18n="hero.cta_li">linkedin →</a>
+        <a class="btn btn--ghost"    href="https://github.com/helenaflaus"             target="_blank" rel="noopener" data-i18n="hero.cta_gh">github →</a>
       </div>
     </div>
+
+    <aside class="hero__expertise" aria-label="Expertise domains">
+      <span class="hero__expertise-label" data-i18n="expertise.label">domains</span>
+      <ul class="hero__expertise-list" role="list">
+
+        <li class="expertise-item">
+          <span class="expertise-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/><path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+          </span>
+          <span class="expertise-item__info">
+            <span class="expertise-item__name" data-i18n="expertise.0.name">AWS</span>
+            <span class="expertise-item__tags" data-i18n="expertise.0.tags">Glue · S3 · Athena</span>
+          </span>
+        </li>
+
+        <li class="expertise-item">
+          <span class="expertise-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="4" height="18" rx="1"/><rect x="10" y="7" width="4" height="14" rx="1"/><rect x="17" y="11" width="4" height="10" rx="1"/></svg>
+          </span>
+          <span class="expertise-item__info">
+            <span class="expertise-item__name" data-i18n="expertise.1.name">Big Data</span>
+            <span class="expertise-item__tags" data-i18n="expertise.1.tags">Spark · ETL/ELT</span>
+          </span>
+        </li>
+
+        <li class="expertise-item">
+          <span class="expertise-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v5c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 10v5c0 1.66 3.58 3 8 3s8-1.34 8-3v-5"/></svg>
+          </span>
+          <span class="expertise-item__info">
+            <span class="expertise-item__name" data-i18n="expertise.2.name">Databases</span>
+            <span class="expertise-item__tags" data-i18n="expertise.2.tags">SQL · Modeling · DW</span>
+          </span>
+        </li>
+
+        <li class="expertise-item">
+          <span class="expertise-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </span>
+          <span class="expertise-item__info">
+            <span class="expertise-item__name" data-i18n="expertise.3.name">Dataviz</span>
+            <span class="expertise-item__tags" data-i18n="expertise.3.tags">Storytelling · Dashboards</span>
+          </span>
+        </li>
+
+        <li class="expertise-item">
+          <span class="expertise-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </span>
+          <span class="expertise-item__info">
+            <span class="expertise-item__name" data-i18n="expertise.4.name">DevOps</span>
+            <span class="expertise-item__tags" data-i18n="expertise.4.tags">Git · Observability</span>
+          </span>
+        </li>
+
+        <li class="expertise-item">
+          <span class="expertise-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </span>
+          <span class="expertise-item__info">
+            <span class="expertise-item__name" data-i18n="expertise.5.name">Programming</span>
+            <span class="expertise-item__tags" data-i18n="expertise.5.tags">Python · PySpark</span>
+          </span>
+        </li>
+
+        <li class="expertise-item">
+          <span class="expertise-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><line x1="6" y1="7" x2="10" y2="11"/><line x1="18" y1="7" x2="14" y2="11"/><line x1="6" y1="17" x2="10" y2="13"/><line x1="18" y1="17" x2="14" y2="13"/></svg>
+          </span>
+          <span class="expertise-item__info">
+            <span class="expertise-item__name" data-i18n="expertise.6.name">Data Mesh</span>
+            <span class="expertise-item__tags" data-i18n="expertise.6.tags">Governance · Self-serve</span>
+          </span>
+        </li>
+
+      </ul>
+    </aside>
   </div>
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     STATS
-══════════════════════════════════════════════════════════ -->
-
-<div class="stats" aria-label="Números do processo de estudo">
-  <div class="stats__item">
-    <div class="stats__number">7</div>
-    <div class="stats__label">domínios técnicos</div>
+<!-- STATS -->
+<div class="stats" role="list" aria-label="Career highlights">
+  <div class="stats__item" role="listitem">
+    <div class="stats__number" data-i18n="stats.0.number">Analytics Engineer</div>
+    <div class="stats__label"  data-i18n="stats.0.label">2+ years · itau unibanco</div>
   </div>
-  <div class="stats__item">
-    <div class="stats__number">27</div>
-    <div class="stats__label">dias de estudo</div>
+  <div class="stats__item" role="listitem">
+    <div class="stats__number" data-i18n="stats.1.number">FinOps</div>
+    <div class="stats__label"  data-i18n="stats.1.label">data infra · cost capture</div>
   </div>
-  <div class="stats__item">
-    <div class="stats__number">≥70%</div>
-    <div class="stats__label">meta na badge</div>
+  <div class="stats__item" role="listitem">
+    <div class="stats__number" data-i18n="stats.2.number">Data Mesh</div>
+    <div class="stats__label"  data-i18n="stats.2.label">ETL/ELT · pipeline migration</div>
   </div>
-  <div class="stats__item">
-    <div class="stats__number">2+</div>
-    <div class="stats__label">anos itaú</div>
+  <div class="stats__item" role="listitem">
+    <div class="stats__number" data-i18n="stats.3.number">Governance & Quality</div>
+    <div class="stats__label"  data-i18n="stats.3.label">observability · data catalog</div>
+  </div>
+  <div class="stats__item" role="listitem">
+    <div class="stats__number" data-i18n="stats.4.number">Architecture & Urbanism</div>
+    <div class="stats__label"  data-i18n="stats.4.label">UNESP Bauru · 2018</div>
+  </div>
+  <div class="stats__item" role="listitem">
+    <div class="stats__number" data-i18n="stats.5.number">BSc Architecture Scholarship</div>
+    <div class="stats__label"  data-i18n="stats.5.label">University of East London · 2015–16</div>
+  </div>
+  <div class="stats__item" role="listitem">
+    <div class="stats__number" data-i18n="stats.6.number">FATEC Ipiranga</div>
+    <div class="stats__label"  data-i18n="stats.6.label">Big Data (on hold)</div>
   </div>
 </div>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     EXPERTISE
-══════════════════════════════════════════════════════════ -->
-
-<section class="section grain" id="expertise" data-section="expertise"
-         aria-labelledby="expertise-title">
-  <div class="container">
-
-    <p class="section__label" data-i18n="expertise.label">01 — expertise</p>
-    <h2 class="section__title" id="expertise-title" data-i18n="expertise.title">
-      domínios de conhecimento
-    </h2>
-
-    <div class="expertise__grid" role="list">
-
-      <div class="expertise__card" role="listitem">
-        <div class="expertise__num">01 · 26,5%</div>
-        <div class="expertise__name">amazon web services</div>
-        <div class="expertise__pct">glue · redshift · athena · quicksight</div>
-        <div class="expertise__tags">
-          <span class="expertise__tag">s3</span>
-          <span class="expertise__tag">lambda</span>
-          <span class="expertise__tag">finops</span>
+<!-- 01 ABOUT -->
+<section class="section section-cream" id="sobre" data-section="sobre" aria-labelledby="sobre-title">
+  <div class="section__inner">
+    <p class="section__label" data-i18n="about.label">01 — about</p>
+    <h2 class="section__title" id="sobre-title" data-i18n="about.title">the person behind the data</h2>
+    <div class="about__grid">
+      <div>
+        <div class="about__text" data-i18n="about.text">
+          analytics engineer at <strong>Itau Unibanco</strong>, working at the intersection of data engineering, financial governance and technical consulting.<br><br>
+          an atypical path: from <strong>architecture and urbanism</strong> (UNESP + scholarship at University of East London) to data, including financial planning on complex infrastructure projects (PPPs) before moving to tech.<br><br>
+          i believe the difference between good data and a good decision is the reasoning in between, and that <strong>ai</strong> extends that reasoning rather than replacing it.
+        </div>
+        <div class="about__hobbies" aria-label="Interests">
+          <span class="hobby" data-i18n="about.hobby0">love cats,</span>
+          <span class="hobby" data-i18n="about.hobby1">spice food,</span>
+          <span class="hobby" data-i18n="about.hobby2">and art.</span>
         </div>
       </div>
-
-      <div class="expertise__card" role="listitem">
-        <div class="expertise__num">02 · 25%</div>
-        <div class="expertise__name">big data</div>
-        <div class="expertise__pct">spark · hadoop · etl/elt</div>
-        <div class="expertise__tags">
-          <span class="expertise__tag">formatos</span>
-          <span class="expertise__tag">streaming</span>
-          <span class="expertise__tag">qualidade</span>
-        </div>
+      <div class="about__photo" aria-label="Helena Flausino photo">
+        <!-- <img src="./assets/img/helena.webp" alt="Helena Flausino"> -->
+        <span class="about__photo-ph">photo</span>
       </div>
-
-      <div class="expertise__card" role="listitem">
-        <div class="expertise__num">03 · 16%</div>
-        <div class="expertise__name">banco de dados</div>
-        <div class="expertise__pct">sql avançado · modelagem · dw</div>
-        <div class="expertise__tags">
-          <span class="expertise__tag">window fn</span>
-          <span class="expertise__tag">joins</span>
-          <span class="expertise__tag">olap</span>
-        </div>
-      </div>
-
-      <div class="expertise__card" role="listitem">
-        <div class="expertise__num">04 · 15%</div>
-        <div class="expertise__name">dataviz</div>
-        <div class="expertise__pct">gestalt · storytelling · dashboards</div>
-        <div class="expertise__tags">
-          <span class="expertise__tag">quicksight</span>
-          <span class="expertise__tag">tableau</span>
-          <span class="expertise__tag">d3</span>
-        </div>
-      </div>
-
-      <div class="expertise__card" role="listitem">
-        <div class="expertise__num">05 · 8,5%</div>
-        <div class="expertise__name">devops</div>
-        <div class="expertise__pct">git · ci/cd · observabilidade</div>
-        <div class="expertise__tags">
-          <span class="expertise__tag">github actions</span>
-          <span class="expertise__tag">monitoring</span>
-        </div>
-      </div>
-
-      <div class="expertise__card" role="listitem">
-        <div class="expertise__num">06 · 4,5%</div>
-        <div class="expertise__name">programação</div>
-        <div class="expertise__pct">python · algoritmos · distribuída</div>
-        <div class="expertise__tags">
-          <span class="expertise__tag">pandas</span>
-          <span class="expertise__tag">pyspark</span>
-        </div>
-      </div>
-
-      <div class="expertise__card" role="listitem">
-        <div class="expertise__num">07 · 4,5%</div>
-        <div class="expertise__name">data mesh</div>
-        <div class="expertise__pct">4 princípios · federated governance</div>
-        <div class="expertise__tags">
-          <span class="expertise__tag">domínios</span>
-          <span class="expertise__tag">self-serve</span>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     IA
-══════════════════════════════════════════════════════════ -->
-
-<section class="section section--surface" id="ia" data-section="ia"
-         aria-labelledby="ia-title">
-  <div class="container">
-
-    <p class="section__label" data-i18n="ia.label">02 — ia no dia a dia</p>
-    <h2 class="section__title" id="ia-title" data-i18n="ia.title">
-      como amplico minha capacidade com ia
-    </h2>
-
-    <div class="ia__grid">
-
-      <div class="ia__card">
-        <span class="ia__badge">agentes</span>
-        <div class="ia__title">planejamento e estudo</div>
-        <p class="ia__desc">
-          estruturei 27 dias de preparação para a badge em parceria com claude —
-          metodologia, templates e tracking. o agente organizou, eu executei e escrevi.
-        </p>
-      </div>
-
-      <div class="ia__card">
-        <span class="ia__badge">automação</span>
-        <div class="ia__title">análise e pipeline</div>
-        <p class="ia__desc">
-          uso llms para iterar em queries sql, revisar código pyspark e documentar
-          decisões de arquitetura — ampliando escopo de análise sem aumentar tempo.
-        </p>
-      </div>
-
-      <div class="ia__card">
-        <span class="ia__badge">princípio</span>
-        <div class="ia__title">raciocínio + ferramenta</div>
-        <p class="ia__desc">
-          ia como amplificador, não substituto. cada projeto documenta explicitamente
-          o que foi gerado e o que foi pensado — transparência como prática.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ══════════════════════════════════════════════════════════
-     PROJECTS
-══════════════════════════════════════════════════════════ -->
-
-<section class="section grain" id="projetos" data-section="projetos"
-         aria-labelledby="projetos-title">
-  <div class="container">
-
-    <p class="section__label" data-i18n="projects.label">03 — projetos</p>
-    <h2 class="section__title" id="projetos-title" data-i18n="projects.title">
-      trabalho selecionado
-    </h2>
-
+<!-- 02 PROJECTS -->
+<section class="section section-white" id="work" data-section="work" aria-labelledby="work-title">
+  <div class="section__inner">
+    <p class="section__label" data-i18n="projects.label">02 — projects</p>
+    <h2 class="section__title" id="work-title" data-i18n="projects.title">selected work</h2>
     <div class="projects__grid">
 
-      <!-- project 1 -->
       <article class="project__card">
         <div class="project__thumb" aria-hidden="true">
-          <svg viewBox="0 0 400 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <rect x="10"  y="10" width="200" height="5" fill="#2850E8" opacity=".55"/>
-            <rect x="10"  y="20" width="160" height="5" fill="#2850E8" opacity=".42"/>
-            <rect x="10"  y="30" width="180" height="5" fill="#2850E8" opacity=".35"/>
-            <rect x="10"  y="42" width="140" height="5" fill="#2850E8" opacity=".48"/>
-            <rect x="160" y="42" width="100" height="5" fill="#2850E8" opacity=".25"/>
-            <rect x="10"  y="52" width="155" height="5" fill="#2850E8" opacity=".38"/>
-            <rect x="175" y="52" width="120" height="5" fill="#2850E8" opacity=".2"/>
-            <rect x="10"  y="62" width="130" height="5" fill="#2850E8" opacity=".3"/>
-            <rect x="150" y="62" width="80"  height="5" fill="#2850E8" opacity=".18"/>
-            <rect x="10"  y="72" width="170" height="5" fill="#2850E8" opacity=".22"/>
-            <rect x="10"  y="82" width="145" height="5" fill="#2850E8" opacity=".18"/>
-            <rect x="165" y="82" width="90"  height="5" fill="#2850E8" opacity=".12"/>
-            <rect x="10"  y="92" width="200" height="5" fill="#2850E8" opacity=".15"/>
-            <!-- dense left cluster -->
-            <rect x="10"  y="10" width="4"   height="5" fill="#2850E8" opacity=".9"/>
-            <rect x="10"  y="42" width="4"   height="5" fill="#2850E8" opacity=".9"/>
-            <rect x="10"  y="72" width="4"   height="5" fill="#2850E8" opacity=".9"/>
+          <svg viewBox="0 0 480 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="140" fill="#F4F1E8"/>
+            <line x1="88" y1="10" x2="88"  y2="115" stroke="#2850E8" stroke-width=".4" opacity=".2"/>
+            <line x1="88" y1="10" x2="460" y2="10"  stroke="#2850E8" stroke-width=".4" opacity=".15"/>
+            <line x1="88" y1="34" x2="460" y2="34"  stroke="#2850E8" stroke-width=".4" opacity=".1"/>
+            <line x1="88" y1="58" x2="460" y2="58"  stroke="#2850E8" stroke-width=".4" opacity=".1"/>
+            <line x1="88" y1="82" x2="460" y2="82"  stroke="#2850E8" stroke-width=".4" opacity=".1"/>
+            <text x="82" y="32"  text-anchor="end" font-family="monospace" font-size="8" fill="#2850E8" opacity=".55">aws</text>
+            <text x="82" y="50"  text-anchor="end" font-family="monospace" font-size="8" fill="#2850E8" opacity=".55">big data</text>
+            <text x="82" y="68"  text-anchor="end" font-family="monospace" font-size="8" fill="#2850E8" opacity=".55">databases</text>
+            <text x="82" y="86"  text-anchor="end" font-family="monospace" font-size="8" fill="#2850E8" opacity=".55">dataviz</text>
+            <text x="82" y="104" text-anchor="end" font-family="monospace" font-size="8" fill="#2850E8" opacity=".55">devops</text>
+            <text x="82" y="116" text-anchor="end" font-family="monospace" font-size="7" fill="#2850E8" opacity=".4">prog + mesh</text>
+            <rect x="88" y="20" width="315" height="13" rx="1" fill="#2850E8" opacity=".75"/>
+            <rect x="88" y="38" width="298" height="13" rx="1" fill="#2850E8" opacity=".68"/>
+            <rect x="88" y="56" width="190" height="13" rx="1" fill="#2850E8" opacity=".55"/>
+            <rect x="88" y="74" width="178" height="13" rx="1" fill="#2850E8" opacity=".48"/>
+            <rect x="88" y="92" width="101" height="13" rx="1" fill="#2850E8" opacity=".38"/>
+            <rect x="88" y="106" width="107" height="9" rx="1" fill="#2850E8" opacity=".28"/>
+            <text x="407" y="31"  font-family="monospace" font-size="7.5" fill="#2850E8" opacity=".8">26.5%</text>
+            <text x="390" y="49"  font-family="monospace" font-size="7.5" fill="#2850E8" opacity=".8">25%</text>
+            <text x="282" y="67"  font-family="monospace" font-size="7.5" fill="#2850E8" opacity=".8">16%</text>
+            <text x="270" y="85"  font-family="monospace" font-size="7.5" fill="#2850E8" opacity=".8">15%</text>
+            <text x="193" y="103" font-family="monospace" font-size="7.5" fill="#2850E8" opacity=".8">8.5%</text>
+            <text x="90" y="130"  font-family="monospace" font-size="7" fill="#2850E8" opacity=".35" letter-spacing="1">domain coverage — analytics engineer professional badge</text>
           </svg>
         </div>
         <div class="project__body">
-          <div class="project__type" data-i18n="">analytics · estudo · badge</div>
-          <h3 class="project__title">analytics engineering reference</h3>
-          <p class="project__desc">
-            base de conhecimento técnico construída durante a preparação para a
-            badge professional — 7 domínios, 22 arquivos, glossário com +60 termos.
-          </p>
+          <p class="project__type"   data-i18n="projects.0.type">analytics · study · badge</p>
+          <h3 class="project__title" data-i18n="projects.0.title">analytics engineering reference</h3>
+          <p class="project__desc"   data-i18n="projects.0.desc">technical knowledge base built during badge preparation, 7 domains, 22 files, glossary with 60+ terms.</p>
           <div class="project__tags">
             <span class="project__tag">aws</span>
             <span class="project__tag">python</span>
             <span class="project__tag">spark</span>
             <span class="project__tag">sql</span>
           </div>
-          <a class="project__link"
-             href="https://github.com/helenaflaus/analytics-engineering-reference"
-             target="_blank" rel="noopener">
-            ver no github →
-          </a>
+          <a class="project__link" href="https://github.com/helenaflaus/analytics-engineering-reference" target="_blank" rel="noopener" data-i18n="projects.0.link">view on github →</a>
         </div>
       </article>
 
-      <!-- project 2 -->
       <article class="project__card">
         <div class="project__thumb" aria-hidden="true">
-          <svg viewBox="0 0 400 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <rect x="40"  y="75" width="30" height="28" fill="#2850E8" opacity=".15"/>
-            <rect x="85"  y="58" width="30" height="45" fill="#2850E8" opacity=".22"/>
-            <rect x="130" y="45" width="30" height="58" fill="#2850E8" opacity=".3"/>
-            <rect x="175" y="62" width="30" height="41" fill="#2850E8" opacity=".2"/>
-            <rect x="220" y="50" width="30" height="53" fill="#2850E8" opacity=".17"/>
-            <rect x="265" y="68" width="30" height="35" fill="#2850E8" opacity=".14"/>
-            <rect x="310" y="58" width="30" height="45" fill="#2850E8" opacity=".12"/>
-            <rect x="355" y="72" width="30" height="31" fill="#2850E8" opacity=".1"/>
-            <line x1="10" y1="103" x2="390" y2="103" stroke="#2850E8" stroke-width="1" opacity=".2"/>
+          <svg viewBox="0 0 480 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="140" fill="#F4F1E8"/>
+            <line x1="40" y1="20"  x2="460" y2="20"  stroke="#2850E8" stroke-width=".4" opacity=".12"/>
+            <line x1="40" y1="52"  x2="460" y2="52"  stroke="#2850E8" stroke-width=".4" opacity=".12"/>
+            <line x1="40" y1="84"  x2="460" y2="84"  stroke="#2850E8" stroke-width=".4" opacity=".12"/>
+            <line x1="40" y1="112" x2="460" y2="112" stroke="#2850E8" stroke-width=".4" opacity=".12"/>
+            <line x1="40"  y1="20" x2="40"  y2="112" stroke="#2850E8" stroke-width=".4" opacity=".15"/>
+            <line x1="460" y1="20" x2="460" y2="112" stroke="#2850E8" stroke-width=".4" opacity=".15"/>
+            <path d="M40,100 C70,95 90,80 120,72 C150,64 170,68 200,58 C230,48 250,42 280,38 C310,34 330,28 360,24 C390,20 420,22 460,18 L460,112 L40,112 Z" fill="#2850E8" opacity=".12"/>
+            <path d="M40,100 C70,95 90,80 120,72 C150,64 170,68 200,58 C230,48 250,42 280,38 C310,34 330,28 360,24 C390,20 420,22 460,18" fill="none" stroke="#2850E8" stroke-width="2" opacity=".7" stroke-linecap="round"/>
+            <path d="M40,108 C70,105 90,98 120,90 C150,82 170,85 200,78 C230,71 250,66 280,60 C310,54 330,50 360,48 C390,46 420,44 460,40 L460,112 L40,112 Z" fill="#2850E8" opacity=".07"/>
+            <path d="M40,108 C70,105 90,98 120,90 C150,82 170,85 200,78 C230,71 250,66 280,60 C310,54 330,50 360,48 C390,46 420,44 460,40" fill="none" stroke="#2850E8" stroke-width="1.5" opacity=".4" stroke-linecap="round" stroke-dasharray="4 3"/>
+            <circle cx="460" cy="18" r="4" fill="#2850E8" opacity=".85"/>
+            <circle cx="460" cy="40" r="3" fill="#2850E8" opacity=".5"/>
+            <text x="40"  y="124" text-anchor="middle" font-family="monospace" font-size="7" fill="#2850E8" opacity=".4">jan</text>
+            <text x="160" y="124" text-anchor="middle" font-family="monospace" font-size="7" fill="#2850E8" opacity=".4">mar</text>
+            <text x="280" y="124" text-anchor="middle" font-family="monospace" font-size="7" fill="#2850E8" opacity=".4">jun</text>
+            <text x="400" y="124" text-anchor="middle" font-family="monospace" font-size="7" fill="#2850E8" opacity=".4">sep</text>
           </svg>
         </div>
         <div class="project__body">
-          <div class="project__type">dataviz · análise · em breve</div>
-          <h3 class="project__title">análise financeira</h3>
-          <p class="project__desc">
-            dashboard de indicadores com storytelling orientado a decisão para
-            área de negócio. análise de dados de crédito com quicksight.
-          </p>
+          <p class="project__type"   data-i18n="projects.1.type">dataviz · analysis · coming soon</p>
+          <h3 class="project__title" data-i18n="projects.1.title">financial analysis</h3>
+          <p class="project__desc"   data-i18n="projects.1.desc">indicators dashboard with decision-oriented storytelling for business stakeholders at itaú. interactive visualizations with quicksight.</p>
           <div class="project__tags">
             <span class="project__tag">dataviz</span>
             <span class="project__tag">sql</span>
             <span class="project__tag">quicksight</span>
           </div>
-          <a class="project__link" href="#" aria-disabled="true">
-            em construção →
-          </a>
+          <a class="project__link" href="#" aria-disabled="true" data-i18n="projects.1.link">in progress →</a>
         </div>
       </article>
 
@@ -365,139 +282,119 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     CERTIFICATIONS
-══════════════════════════════════════════════════════════ -->
-
-<section class="section section--surface" id="certs" data-section="certs"
-         aria-labelledby="certs-title">
-  <div class="container">
-
-    <p class="section__label" data-i18n="certs.label">04 — certificações</p>
-    <h2 class="section__title" id="certs-title" data-i18n="certs.title">
-      formação técnica
-    </h2>
-
-    <div class="certs__strip" role="list">
-      <div class="cert__card cert__card--main" role="listitem">
-        <div class="cert__dot"></div>
-        <div>
-          <div class="cert__name">badge analytics professional</div>
-          <div class="cert__inst">itaú unibanco · 2025</div>
-        </div>
+<!-- 03 AI -->
+<section class="section section-cream" id="ia" data-section="ia" aria-labelledby="ia-title">
+  <div class="section__inner">
+    <p class="section__label" data-i18n="ia.label">03 — ai in practice</p>
+    <h2 class="section__title" id="ia-title" data-i18n="ia.title">how i amplify my work with ai</h2>
+    <div class="ia__grid">
+      <div class="ia__card">
+        <span class="ia__badge" data-i18n="ia.0.badge">agents</span>
+        <h3  class="ia__title"  data-i18n="ia.0.title">planning & learning</h3>
+        <p   class="ia__desc"   data-i18n="ia.0.desc">structured 7 weeks of badge preparation with claude (methodology, templates and tracking). the agent organized, i executed and wrote every line.</p>
       </div>
-      <div class="cert__card" role="listitem">
-        <div class="cert__dot"></div>
-        <div>
-          <div class="cert__name">aws solutions architect</div>
-          <div class="cert__inst">amazon web services</div>
-        </div>
+      <div class="ia__card">
+        <span class="ia__badge" data-i18n="ia.1.badge">automation</span>
+        <h3  class="ia__title"  data-i18n="ia.1.title">analysis & pipeline</h3>
+        <p   class="ia__desc"   data-i18n="ia.1.desc">i use llms to iterate on sql queries, review pyspark code and document architecture decisions, extending analysis scope without adding time.</p>
       </div>
-      <div class="cert__card" role="listitem">
-        <div class="cert__dot"></div>
-        <div>
-          <div class="cert__name">spark & pyspark</div>
-          <div class="cert__inst">databricks / udemy</div>
-        </div>
-      </div>
-      <div class="cert__card" role="listitem">
-        <div class="cert__dot"></div>
-        <div>
-          <div class="cert__name">analytics engineering</div>
-          <div class="cert__inst">dbt labs</div>
-        </div>
+      <div class="ia__card">
+        <span class="ia__badge" data-i18n="ia.2.badge">principle</span>
+        <h3  class="ia__title"  data-i18n="ia.2.title">reasoning + tool</h3>
+        <p   class="ia__desc"   data-i18n="ia.2.desc">ai as amplifier, not substitute. each project explicitly documents what was generated and what was thought, transparency as practice.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="skills__row" aria-label="Stack técnica">
+
+<!-- 04 EDUCATION -->
+<section class="section section-white" id="certs" data-section="certs" aria-labelledby="certs-title">
+  <div class="section__inner">
+    <p class="section__label" data-i18n="certs.label">04 — certifications & education</p>
+    <h2 class="section__title" id="certs-title" data-i18n="certs.title">technical & academic background</h2>
+    <div class="certs__strip" role="list">
+
+      <div class="cert__card cert__card--main" role="listitem">
+        <span class="cert__dot"></span>
+        <div>
+          <div class="cert__name" data-i18n="certs.0.name">analytics engineer professional badge</div>
+          <div class="cert__inst" data-i18n="certs.0.inst">itau unibanco · 2026</div>
+        </div>
+      </div>
+
+      <div class="cert__card" role="listitem">
+        <span class="cert__dot"></span>
+        <div>
+          <div class="cert__name" data-i18n="certs.1.name">big data for business technology</div>
+          <div class="cert__inst" data-i18n="certs.1.inst">FATEC Ipiranga — on hold</div>
+        </div>
+      </div>
+
+      <div class="cert__card" role="listitem">
+        <span class="cert__dot"></span>
+        <div>
+          <div class="cert__name" data-i18n="certs.2.name">bachelor in architecture & urbanism</div>
+          <div class="cert__inst" data-i18n="certs.2.inst">UNESP Bauru · 2018</div>
+        </div>
+      </div>
+
+      <div class="cert__card" role="listitem">
+        <span class="cert__dot"></span>
+        <div>
+          <div class="cert__name" data-i18n="certs.3.name">international scholarship</div>
+          <div class="cert__inst" data-i18n="certs.3.inst">University of East London · 2015–2016</div>
+        </div>
+      </div>
+
+      <div class="cert__card" role="listitem">
+        <span class="cert__dot"></span>
+        <div>
+          <div class="cert__name" data-i18n="certs.4.name">EF Standard English Test (EF SET)</div>
+          <div class="cert__inst" data-i18n="certs.4.inst">77/100 (C2 Proficient)</div>
+        </div>
+      </div>
+
+      <div class="cert__card" role="listitem">
+        <span class="cert__dot"></span>
+        <div>
+          <div class="cert__name" data-i18n="certs.5.name">AWS Academy Cloud Foundations</div>
+          <div class="cert__inst" data-i18n="certs.5.inst">Certified 2026</div>
+        </div>
+      </div>
+
+      <div class="cert__card" role="listitem">
+        <span class="cert__dot"></span>
+        <div>
+          <div class="cert__name" data-i18n="certs.6.name">AWS Academy Data Engineering</div>
+          <div class="cert__inst" data-i18n="certs.6.inst">Certified 2026</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="skills__row" aria-label="Tech stack">
       <span class="skill skill--hi">python</span>
       <span class="skill skill--hi">spark</span>
       <span class="skill skill--hi">sql</span>
-      <span class="skill">redshift</span>
-      <span class="skill">athena</span>
-      <span class="skill">dbt</span>
-      <span class="skill">airflow</span>
-      <span class="skill">quicksight</span>
-      <span class="skill">glue</span>
-      <span class="skill">s3</span>
-      <span class="skill">git</span>
+      <span class="skill">redshift</span><span class="skill">athena</span><span class="skill">dbt</span>
+      <span class="skill">airflow</span><span class="skill">quicksight</span><span class="skill">glue</span>
+      <span class="skill">s3</span><span class="skill">git</span><span class="skill">finops</span>
+      <span class="skill">data mesh</span>
     </div>
-
   </div>
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     ABOUT
-══════════════════════════════════════════════════════════ -->
-
-<section class="section grain" id="sobre" data-section="sobre"
-         aria-labelledby="sobre-title">
-  <div class="container">
-
-    <p class="section__label" data-i18n="about.label">05 — sobre</p>
-    <h2 class="section__title" id="sobre-title" data-i18n="about.title">
-      quem está por trás dos dados
-    </h2>
-
-    <div class="about__grid">
-      <div>
-        <p class="about__text" data-i18n="about.text">
-          engenheira de analytics jr. no <strong>itaú unibanco</strong>,
-          construindo sistemas de dados que transformam volume em clareza.<br><br>
-          acredito que a diferença entre um bom dado e uma boa decisão é o
-          raciocínio no meio — e que <strong>ia</strong> é a ferramenta que
-          estende esse raciocínio, não o substitui.<br><br>
-          este portfolio é evidência disso.
-        </p>
-
-        <div class="about__hobbies" aria-label="interesses">
-          <span class="hobby">fotografia analógica</span>
-          <span class="hobby">design gráfico</span>
-          <span class="hobby">leitura técnica</span>
-        </div>
-      </div>
-
-      <div class="about__photo" aria-label="Foto de Helena Flausino">
-        <!-- replace with: <img src="assets/img/helena.webp" alt="Helena Flausino"> -->
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-          <circle cx="18" cy="13" r="7" stroke="#2850E8" stroke-width="1.5"/>
-          <path d="M4 34c0-7.732 6.268-14 14-14s14 6.268 14 14"
-                stroke="#2850E8" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ══════════════════════════════════════════════════════════
-     FOOTER
-══════════════════════════════════════════════════════════ -->
-
+<!-- FOOTER -->
 <footer class="footer" role="contentinfo">
-  <span class="footer__name" data-i18n="footer.name">
-    helena flausino · <b>analytics engineer</b> · são paulo
-  </span>
-  <nav class="footer__links" aria-label="Links sociais">
-    <a class="footer__link"
-       href="https://www.linkedin.com/in/helenaflausino"
-       target="_blank" rel="noopener">linkedin</a>
-    <a class="footer__link"
-       href="https://github.com/helenaflaus"
-       target="_blank" rel="noopener">github</a>
-    <a class="footer__link"
-       href="mailto:helena@example.com">email</a>
+  <span class="footer__name" data-i18n="footer.name">helena flausino · <b>analytics engineer</b> · sao paulo</span>
+  <nav class="footer__links" aria-label="Social links">
+    <a class="footer__link" href="https://www.linkedin.com/in/helenaflausino" target="_blank" rel="noopener">linkedin</a>
+    <a class="footer__link" href="https://github.com/helenaflaus"             target="_blank" rel="noopener">github</a>
+    <a class="footer__link" href="mailto:helenaflausino@gmail.com">email</a>
   </nav>
 </footer>
 
-
-<!-- ══════════════════════════════════════════════════════════
-     SCRIPTS
-══════════════════════════════════════════════════════════ -->
-
-<script type="module" src="assets/js/main.js"></script>
-
+<script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
